@@ -62,8 +62,8 @@ export default function App() {
       setLoadingText('Buscando la mejor recomendación para ti...');
     }, 1500);
     setTimeout(() => {
-      // Redirecionamento direto para a VSL após o loading
-      window.location.href = '/vsl2.html';
+      // Redirecionamento com passagem de UTMs
+      window.location.href = '/vsl2.html' + window.location.search;
     }, 3000);
   };
 
