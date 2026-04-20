@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>¡ESPERA! Tu pedido no está completo</title>
+  <meta name="robots" content="noindex, nofollow">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #f8f9fa;
+      --text-color: #333;
+      --warning-bg: #dc2626;
+      --warning-text: #ffffff;
+      --font-family: 'Roboto', sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-family);
+      line-height: 1.5;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Headline / Warning Banner */
+    .warning-banner {
+      background-color: var(--warning-bg);
+      color: var(--warning-text);
+      text-align: center;
+      padding: 16px 20px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .warning-banner p {
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+
+    /* Main Container */
+    .main-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Video Wrapper */
+    .video-wrapper {
+      width: 100%;
+      max-width: 600px; /* Adapta-se a diferentes orientações */
+      margin: 0 auto 24px;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Upsell / Hotmart Widget Wrapper */
+    #hotmart-upsell-wrapper {
+      display: none; /* Oculto no carregamento */
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #hotmart-upsell-wrapper.fade-in {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Footer / Minimalist */
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 11px;
+      color: #666;
+    }
+
+    @media (max-width: 480px) {
+      .warning-banner {
+        font-size: 16px;
+        padding: 12px 16px;
+      }
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1629569921420557'); /* Mesma ID usada na VSL2 */
+  fbq('track', 'PageView');
+  fbq('trackCustom', 'ViewUpsell1');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1629569921420557&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+<body>
+
+  <!-- Camada 1: Headline Aviso -->
+  <div class="warning-banner">
+    <p>⚠️ ¡ESPERA! Tu pedido no está completo. No cierres esta página, estamos creando tu acceso. Mira este video obligatorio de bienvenida a continuación...</p>
+  </div>
+
+  <div class="main-container">
+    <!-- Camada 2: Player de Vídeo -->
+    <div class="video-wrapper">
+      <!-- MOCKUP VTurbo/Panda Player -->
+      <!-- O SCRIPT DO PLAYER (VTurbo/Panda) DEVE SER INSERIDO AQUI -->
+      <div style="padding-top: 56.25%; position: relative;">
+          <!-- Placeholder visual indicativo -->
+          <div style="position: absolute; top:0; left:0; width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:14px; text-align:center; padding:20px; background:#111;">
+              [Área do Vídeo: Insira aqui o script do VTurbo/Panda com Smart Autoplay]
+          </div>
+      </div>
+    </div>
+
+    <!-- Camada 3: Container de Vendas (Oculto no carregamento) -->
+    <div id="hotmart-upsell-wrapper">
+      <!-- O WIDGET DA HOTMART (ONE-CLICK UPSELL) DEVE SER INSERIDO AQUI -->
+      
+      <!-- Inicio Placeholder Visual para o desenvolvedor validar layout (Remover ao integrar Hotmart) -->
+      <div style="text-align: center; padding: 20px; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+          <h3 style="margin-bottom: 12px; font-weight: bold; color: #111;">Oferta Única de Actualización</h3>
+          <p style="margin-bottom: 20px; font-size: 14px; color: #555;">Activa tu Reseteo Neuro-Digestivo Express ahora</p>
+          <button style="display:block; width:100%; padding: 18px; background-color: #10B981; color: #fff; font-weight: 900; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 16px; text-transform: uppercase;">
+              Sí, quiero añadir esto a mi pedido por solo $27
+          </button>
+          <a href="#" style="display:block; color: #dc2626; font-size: 14px; text-decoration: underline;">
+              No, prefiero intentar que el audio funcione con mi intestino inflamado
+          </a>
+      </div>
+      <!-- Fim Placeholder Visual -->
+    </div>
+  </div>
+
+  <footer>
+    <p>Este sitio no es parte del sitio web de YouTube, Google LLC ni de Meta Inc.<br>Los resultados pueden variar de persona a persona.</p>
+  </footer>
+
+  <!-- Scripts: Lógica de Delay e Tracking -->
+  <script>
+    /* ── Lógica de Delay: Exibição do Widget Hotmart ── */
+    // Tempo em segundos que o pitch ocorre no vídeo
+    const PITCH_TIME_IN_SECONDS = 405; // Ajustar (Ex: 405 = 06:45)
+    
+    // Função que revela o container oculto
+    function revealUpsellWidget() {
+      const widgetContainer = document.getElementById('hotmart-upsell-wrapper');
+      if (widgetContainer && widgetContainer.style.display !== 'block') {
+        widgetContainer.style.display = 'block';
+        // Força reflow no navegador
+        void widgetContainer.offsetWidth;
+        // Adiciona classe para transição (fade-in)
+        widgetContainer.classList.add('fade-in');
+        
+        // Foca visualmente no botão
+        widgetContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    // Fallback: Dispara temporizador baseado no carregamento da página
+    // (O Recomendado é integrar com o evento "timeupdate" da Player API)
+    setTimeout(revealUpsellWidget, PITCH_TIME_IN_SECONDS * 1000);
+
+
+    /* ── Repasse de UTMs (Para garantir o Rastreamento da Hotmart) ── */
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com"];
+    function getParams() {
+        let t = "", e = window.top.location.href, r = new URL(e);
+        if (null != r) {
+            let a = r.searchParams.get("utm_source"),
+                n = r.searchParams.get("utm_medium"),
+                o = r.searchParams.get("utm_campaign"),
+                m = r.searchParams.get("utm_term"),
+                c = r.searchParams.get("utm_content");
+            -1 !== e.indexOf("?") && (t = "&sck=" + a + "|" + n + "|" + o + "|" + m + "|" + c)
+        }
+        return t
+    }
+    !function() {
+        var t = new URLSearchParams(window.location.search);
+        t.toString() && document.querySelectorAll("a").forEach(function(e) {
+            for (let r = 0; r < prefix.length; r++) {
+               if(-1 !== e.href.indexOf(prefix[r])) {
+                   (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams());
+               }
+            }
+        })
+    }();
+  </script>
+</body>
+</html>
