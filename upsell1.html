@@ -146,18 +146,16 @@
     <div id="hotmart-upsell-wrapper">
       <!-- O WIDGET DA HOTMART (ONE-CLICK UPSELL) DEVE SER INSERIDO AQUI -->
       
-      <!-- Inicio Placeholder Visual para o desenvolvedor validar layout (Remover ao integrar Hotmart) -->
-      <div style="text-align: center; padding: 20px; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-          <h3 style="margin-bottom: 12px; font-weight: bold; color: #111;">Oferta Única de Actualización</h3>
-          <p style="margin-bottom: 20px; font-size: 14px; color: #555;">Activa tu Reseteo Neuro-Digestivo Express ahora</p>
-          <button style="display:block; width:100%; padding: 18px; background-color: #10B981; color: #fff; font-weight: 900; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 16px; text-transform: uppercase;">
-              Sí, quiero añadir esto a mi pedido por solo $27
-          </button>
-          <a href="#" style="display:block; color: #dc2626; font-size: 14px; text-decoration: underline;">
-              No, prefiero intentar que el audio funcione con mi intestino inflamado
-          </a>
-      </div>
-      <!-- Fim Placeholder Visual -->
+      <!-- HOTMART - Sales Funnel Widget -->
+      <!--- sales funnel container --->
+      <div id="hotmart-sales-funnel"></div>
+
+      <!--- script load and setup --->
+      <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+      <script>
+      checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+      </script>
+      <!-- HOTMART - Sales Funnel Widget -->
     </div>
   </div>
 
