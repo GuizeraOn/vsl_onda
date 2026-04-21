@@ -44,6 +44,13 @@ export default function App() {
   const [loadingText, setLoadingText] = useState('Analizando tus respuestas...');
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
 
+  // Redirecionamento instantâneo (Bypass do Quiz para VSL V2 em Standby)
+  useEffect(() => {
+    window.location.replace('/vsl_v2.html' + window.location.search);
+  }, []);
+
+  return null; // Oculta o quiz e finaliza renderização
+
   const handleAnswer = (index: number) => {
     setSelectedOption(index);
     setTimeout(() => {
