@@ -25,6 +25,7 @@ export default defineConfig(({mode}) => {
         input: {
           main: path.resolve(__dirname, 'index.html'),
           vsl: path.resolve(__dirname, 'vsl2.html'),
+          vsl2: path.resolve(__dirname, 'vsl_v2.html'),
           upsell1: path.resolve(__dirname, 'upsell1.html'),
           downsell1: path.resolve(__dirname, 'downsell1.html'),
         },
